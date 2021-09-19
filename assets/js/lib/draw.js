@@ -37,6 +37,12 @@ let circle = function(x, y, radius, color) {
     ctx.fillStyle = color;
     ctx.fillText(text, x, y);
   }
+
+  let image = function(image, dx, dy) {
+      let img = new Image();
+      img.src = image
+      ctx.drawImage(img, dx, dy);
+  }
   
   // Clear the screen
   let clearScreen = function() {
@@ -46,5 +52,5 @@ let circle = function(x, y, radius, color) {
     ctx.restore();
   }
 
-let draw = {circle, rectangle, triangle, arc, text, clearScreen}
+let draw = {circle, rectangle, triangle, arc, text, image, clearScreen}
 export {draw}
