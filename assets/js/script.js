@@ -22,6 +22,7 @@ function animate() {
     else document.body.style.cursor = "auto";
     draw.clearScreen();
     draw.circle(mouse.x, mouse.y, 50, mouse.left ? "blue" : "red");
+    draw.text(20, 20, 20, lightdm.users[0].real_name, "blue")
     draw.text(20, totalHeight-20, 20, turea.clock() + " @ " + lightdm.hostname, "blue")
     requestAnimationFrame(animate);
 }
