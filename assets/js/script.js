@@ -21,7 +21,7 @@ function animate() {
     if (mouse.x <= totalWidth/2) document.body.style.cursor = "pointer";
     else document.body.style.cursor = "auto";
     draw.clearScreen();
-    draw.image("../assets/ui/wallpaper.jpg", 0, 0)
+    draw.image("../../ui/wallpaper.jpg", 0, 0)
     draw.circle(mouse.x, mouse.y, 50, mouse.left ? "blue" : "red");
 
     let x = 0;
