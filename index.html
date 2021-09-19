@@ -14,6 +14,17 @@
             Sign in
         </button>
     </form>
+    <div class="actions-bar">
+        <div class="action action-shutdown" onclick="javascript: lightdm.shutdown();">
+            <i></i> Shut down
+        </div>
+        <div class="action action-reboot" onclick="javascript: lightdm.restart();">
+            <i></i> Restart
+        </div>
+        <div id="clock" class="action action-clock">00:00</div>
+    </div>
+    <script src="assets/js/mock.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="assets/js/clock.js"></script>
 </body>
 </html>
