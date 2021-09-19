@@ -26,9 +26,7 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-window.__debug = false;
-
-      if (window.__debug === true) {
+      if (typeof window.lightdm == 'undefined') {
         window.lightdm = {
           "authenticate": function(){ return true; },
           "hibernate": function(){ return true; },
