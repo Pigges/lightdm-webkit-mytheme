@@ -26,7 +26,7 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-window.__debug = true;
+window.__debug = false;
 
       if (window.__debug === true) {
         window.lightdm = {
