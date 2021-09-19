@@ -24,8 +24,8 @@ function animate() {
     draw.circle(mouse.x, mouse.y, 50, mouse.left ? "blue" : "red");
 
     let x = 0;
-    while (x < lightdm.users.length) {
-        draw.text(20, 20+(x+1)*20, 20, lightdm.users[x].real_name, "blue")
+    while (x < lightdm.sessions.length) {
+        draw.text(20, 20+(x+1)*20, 20, lightdm.sessions[x].name, "blue")
         x++;
     }
     
