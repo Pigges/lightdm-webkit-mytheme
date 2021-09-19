@@ -1,13 +1,5 @@
 let time;
 
-function startTime() {
-    time = clock();
-}
-
-function checkClock() {
-    return time;
-}
-
 function clock() {
     var today=new Date();
     var h=today.getHours();
@@ -22,4 +14,4 @@ function checkTime(i) {
     return i
 }
 
-export {startTime, checkClock}
+export {clock}
